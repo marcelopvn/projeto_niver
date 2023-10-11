@@ -5,14 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto-niver</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <p class="hero__text">
-                O meu aniversario esta chegando , ele acontecera em 10d 20h 30min 40s
+                O meu aniversário está chegando , que acontece em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Alto da Boa vista , Rio de Janeiro
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        21/03/2024 ás 19hrs
+                    </li>
+                </ul>
+                <a href="" class="button button--primary">
+                    Receba o convite
+                </a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--local" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Local</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, obcaecati culpa eum illum modi, labore, at doloribus asperiores sit vitae reprehenderit voluptas! Ab eligendi molestiae porro ad cum veritatis aperiam.
+                </p>
+            </div>
+            <img class="event__image" src="./images/loca_festa.png" alt="foto alto da boa vista">
+        </div>
+    </section>
+    <section class="event event--pista event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Parte Interna</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque in doloribus esse ad. Pariatur fugit architecto deleniti nobis ratione similique ipsa, impedit doloremque? Corrupti veniam ex neque sapiente tempora placeat?
+                </p>
+            </div>
+            <img class="event__image" src="./images/03.webp" alt="foto alto da boa vista">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
